@@ -1,0 +1,9 @@
+version: '3'
+services:
+  icecast:
+    build: ./icecast
+    ports:
+      - "8000:8000"
+      - "8001:8001"
+    env_file:
+      .env
