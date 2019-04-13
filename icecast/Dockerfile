@@ -8,7 +8,7 @@ MAINTAINER juliusrajala <juliusrajala@gmail.com>
 RUN apk add --no-cache icecast
 
 # Moving custom icecast-configuration to its place
-ADD ./icecast-custom.xml /etc/icecast.xml
+COPY ./icecast-custom.xml /etc/
 
 # Run icecast
-CMD icecast -c /etc/icecast.xml
+CMD icecast -c /etc/icecast-custom.xml
