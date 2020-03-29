@@ -1,7 +1,7 @@
 version: '3'
 services:
-  icecast:
-    build: ./icecast
+  audiosink-icecast:
+    build: ./audiosink
     ports:
       - "8000:8000"
       - "8001:8001"
