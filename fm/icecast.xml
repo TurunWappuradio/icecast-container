@@ -4,9 +4,9 @@
     <sources>1</sources>
     <threadpool>5</threadpool>
     <queue-size>524288</queue-size>
-    <client-timeout>60</client-timeout>
+    <!-- <client-timeout>60</client-timeout>
     <header-timeout>60</header-timeout>
-    <source-timeout>10</source-timeout>
+    <source-timeout>10</source-timeout> -->
     <!-- If enabled, this will provide a burst of data when a client 
           first connects, thereby significantly reducing the startup 
           time for listeners that do substantial buffering. However,
