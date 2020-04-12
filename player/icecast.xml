@@ -1,11 +1,9 @@
 <icecast>
   <limits>
-    <clients>10000</clients>
+    <clients>100000</clients>
     <sources>1</sources>
     <threadpool>5</threadpool>
     <queue-size>524288</queue-size>
-    <client-timeout>30</client-timeout>
-    <header-timeout>15</header-timeout>
     <source-timeout>10</source-timeout>
     <!-- If enabled, this will provide a burst of data when a client 
           first connects, thereby significantly reducing the startup 

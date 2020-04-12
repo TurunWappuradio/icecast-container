@@ -1,6 +1,6 @@
 <icecast>
   <limits>
-    <clients>10</clients>
+    <clients>100</clients>
     <sources>1</sources>
     <threadpool>5</threadpool>
     <queue-size>524288</queue-size>
