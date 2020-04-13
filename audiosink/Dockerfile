@@ -28,4 +28,4 @@ COPY ./intro.mp3 usr/share/icecast/web/
 RUN chmod +x usr/share/icecast/web/intro.mp3
 
 # Run icecast
-CMD icecast -c /etc/icecast.xml
+CMD /opt/icecast/2.4.0/bin/icecast -c /etc/icecast.xml

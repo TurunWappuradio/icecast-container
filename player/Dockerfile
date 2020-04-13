@@ -26,4 +26,4 @@ RUN mkdir -p /usr/src/icecast && \
 COPY ./icecast.xml /etc/
 
 # Run icecast
-CMD icecast -c /etc/icecast.xml
+CMD /opt/icecast/2.4.0/bin/icecast -c /etc/icecast.xml
