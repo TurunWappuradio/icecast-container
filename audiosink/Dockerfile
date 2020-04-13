@@ -27,5 +27,16 @@ COPY ./icecast.xml /etc/
 COPY ./intro.mp3 usr/share/icecast/web/
 RUN chmod +x usr/share/icecast/web/intro.mp3
 
+# Create log-files for icecast
+RUN mkdir -p /var/log/icecast/ && \
+         touch /var/log/icecast/error.log && \
+         touch /var/log/icecast/access.log
+
+# Create user and group for icecast
+RUN useradd -ms /bin/bash icecast && \
+        usermod -a -G icecast icecast && \
+        chmod -R a+w /var/log/icecast/
+
+
 # Run icecast
 CMD /opt/icecast/2.4.0/bin/icecast -c /etc/icecast.xml
