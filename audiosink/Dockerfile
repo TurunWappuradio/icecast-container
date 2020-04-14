@@ -24,8 +24,8 @@ RUN mkdir -p /usr/src/icecast && \
 
 # Moving custom icecast-configuration to its place
 COPY ./icecast.xml /etc/
-COPY ./intro.mp3 usr/share/icecast/web/
-RUN chmod +x usr/share/icecast/web/intro.mp3
+COPY ./intro_48kHz_16b.mp3 usr/share/icecast/web/
+RUN chmod +x usr/share/icecast/web/intro_48kHz_16b.mp3
 
 # Create log-files for icecast
 RUN mkdir -p /var/log/icecast/ && \

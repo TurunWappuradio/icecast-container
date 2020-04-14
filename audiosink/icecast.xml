@@ -44,9 +44,10 @@
   <mount>
     <public>0</public>
     <mount-name>/audiosink.mp3</mount-name>
-    <fallback-mount>/intro.mp3</fallback-mount>
+    <fallback-mount>/intro_48kHz_16b.mp3</fallback-mount>
     <fallback-override>1</fallback-override>
     <hidden>1</hidden>
+    <bitrate>192</bitrate>
   </mount>
 
   <fileserve>1</fileserve>
