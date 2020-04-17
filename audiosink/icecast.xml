@@ -4,6 +4,8 @@
     <sources>4</sources>
     <threadpool>5</threadpool>
     <queue-size>524288</queue-size>
+    <client-timeout>30</client-timeout>
+    <header-timeout>15</header-timeout>
     <source-timeout>10</source-timeout>
     <!-- If enabled, this will provide a burst of data when a client 
           first connects, thereby significantly reducing the startup 
@@ -44,6 +46,15 @@
   <mount>
     <public>0</public>
     <mount-name>/audiosink.mp3</mount-name>
+    <fallback-mount>/live.mp3</fallback-mount>
+    <fallback-override>1</fallback-override>
+    <hidden>1</hidden>
+    <bitrate>192</bitrate>
+  </mount>
+
+  <mount>
+    <public>0</public>
+    <mount-name>/live.mp3</mount-name>
     <fallback-mount>/intro_48kHz_16b.mp3</fallback-mount>
     <fallback-override>1</fallback-override>
     <hidden>1</hidden>
