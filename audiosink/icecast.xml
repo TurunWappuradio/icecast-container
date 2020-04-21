@@ -55,10 +55,10 @@
   <mount>
     <public>0</public>
     <mount-name>/live.mp3</mount-name>
-    <fallback-mount>/intro_48kHz_16b_128kbps.mp3</fallback-mount>
+    <fallback-mount>/intro_48kHz_16b_192kbps.mp3</fallback-mount>
     <fallback-override>1</fallback-override>
     <hidden>1</hidden>
-    <bitrate>128</bitrate>
+    <bitrate>192</bitrate>
   </mount>
 
   <fileserve>1</fileserve>
